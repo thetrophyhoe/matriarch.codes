@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIARCH // ARCHIVES</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #E0E0E0;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        /* The Header: "God Mode" vibes */
+        header {
+            border-bottom: 2px solid #D4AF37; /* Gold Line */
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #D4AF37; /* Gold */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* The File System */
+        .directory {
+            margin-bottom: 30px;
+        }
+
+        .folder-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFF;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .folder-title::before {
+            content: "[DIR]";
+            margin-right: 10px;
+            color: #D4AF37;
+            font-size: 14px;
+        }
+
+        .file-list {
+            list-style: none;
+            padding-left: 20px;
+            border-left: 1px solid #333;
+        }
+
+        .file-item {
+            margin-bottom: 8px;
+        }
+
+        /* Links (Accessible Files) */
+        a {
+            text-decoration: none;
+            color: #888;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #D4AF37; /* Gold Hover */
+            padding-left: 5px; /* Tiny movement */
+        }
+
+        a::before {
+            content: ">";
+            margin-right: 8px;
+            opacity: 0;
+        }
+
+        a:hover::before {
+            opacity: 1;
+        }
+
+        /* Locked Files */
+        .locked {
+            color: #333;
+            cursor: not-allowed;
+        }
+
+        .locked::after {
+            content: " [ENCRYPTED]";
+            font-size: 10px;
+            color: #D00;
+            margin-left: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 100px;
+            font-size: 10px;
+            color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Matriarch.Codes</h1>
+            <div class="status">ROOT DIRECTORY // AUTH: ADMIN</div>
+        </div>
+        <div class="status">SYS.VER.2026</div>
+    </header>
+
+    <div class="directory">
+        <div class="folder-title">T.H.E.A.ntichrist_Mother_DLC</div>
+        <ul class="file-list">
+            <li class="file-item">
+                <a href="essay_01.html">FILE_01: The_Divine_Feminine_Glitch.txt</a>
+            </li>
+            <li class="file-item">
+                <a href="#">FILE_02: [REDACTED].txt</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="directory">
+        <div class="folder-title">The_Grimoire</div>
+        <ul class="file-list">
+            <li class="file-item">
+                <span class="locked">Book_of_Shadows_Vol1.pdf</span>
+            </li>
+            <li class="file-item">
+                <span class="locked">Sigil_Generator.exe</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="directory">
+        <div class="folder-title">Project_Jannette</div>
+        <ul class="file-list">
+            <li class="file-item">
+                <span class="locked">Character_Profile_01.mp4</span>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        GLITCHED RECORDS ARCHIVE // EST. 2026
+    </footer>
+
+</body>
+</html>
