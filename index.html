@@ -14,9 +14,8 @@
             line-height: 1.6;
         }
 
-        /* The Header: "God Mode" vibes */
         header {
-            border-bottom: 2px solid #D4AF37; /* Gold Line */
+            border-bottom: 2px solid #D4AF37;
             padding-bottom: 20px;
             margin-bottom: 40px;
             display: flex;
@@ -24,94 +23,25 @@
             align-items: flex-end;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #D4AF37; /* Gold */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+        h1 { margin: 0; font-size: 24px; color: #D4AF37; text-transform: uppercase; letter-spacing: 2px; }
+        .status { font-size: 12px; color: #555; }
 
-        .status {
-            font-size: 12px;
-            color: #555;
-        }
+        .directory { margin-bottom: 40px; }
+        .folder-title { font-size: 18px; font-weight: bold; color: #FFF; margin-bottom: 15px; display: flex; align-items: center; }
+        .folder-title::before { content: "[DIR]"; margin-right: 10px; color: #D4AF37; font-size: 14px; }
 
-        /* The File System */
-        .directory {
-            margin-bottom: 30px;
-        }
+        .file-list { list-style: none; padding-left: 20px; border-left: 1px solid #333; }
+        .file-item { margin-bottom: 12px; }
 
-        .folder-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #FFF;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
+        a { text-decoration: none; color: #888; transition: 0.3s; display: inline-block; }
+        a:hover { color: #D4AF37; padding-left: 5px; text-shadow: 0 0 5px #D4AF37; }
+        a::before { content: ">"; margin-right: 8px; opacity: 0; }
+        a:hover::before { opacity: 1; }
 
-        .folder-title::before {
-            content: "[DIR]";
-            margin-right: 10px;
-            color: #D4AF37;
-            font-size: 14px;
-        }
+        .locked { color: #333; cursor: not-allowed; }
+        .locked::after { content: " [ENCRYPTED]"; font-size: 10px; color: #D00; margin-left: 10px; }
 
-        .file-list {
-            list-style: none;
-            padding-left: 20px;
-            border-left: 1px solid #333;
-        }
-
-        .file-item {
-            margin-bottom: 8px;
-        }
-
-        /* Links (Accessible Files) */
-        a {
-            text-decoration: none;
-            color: #888;
-            transition: 0.3s;
-            display: inline-block;
-        }
-
-        a:hover {
-            color: #D4AF37; /* Gold Hover */
-            padding-left: 5px; /* Tiny movement */
-        }
-
-        a::before {
-            content: ">";
-            margin-right: 8px;
-            opacity: 0;
-        }
-
-        a:hover::before {
-            opacity: 1;
-        }
-
-        /* Locked Files */
-        .locked {
-            color: #333;
-            cursor: not-allowed;
-        }
-
-        .locked::after {
-            content: " [ENCRYPTED]";
-            font-size: 10px;
-            color: #D00;
-            margin-left: 10px;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 100px;
-            font-size: 10px;
-            color: #333;
-            text-align: center;
-        }
-
+        footer { margin-top: 100px; font-size: 10px; color: #333; text-align: center; }
     </style>
 </head>
 <body>
@@ -121,39 +51,35 @@
             <h1>Matriarch.Codes</h1>
             <div class="status">ROOT DIRECTORY // AUTH: ADMIN</div>
         </div>
-        <div class="status">SYS.VER.2026</div>
+        <div class="status">SYS.VER.2026 // GLITCHED_RECORDS</div>
     </header>
 
     <div class="directory">
-        <div class="folder-title">T.H.E.A.ntichrist_Mother_DLC</div>
+        <div class="folder-title">DIR_01: PROTOCOLS</div>
         <ul class="file-list">
-            <li class="file-item">
-                <a href="essay_01.html">FILE_01: The_Divine_Feminine_Glitch.txt</a>
-            </li>
-            <li class="file-item">
-                <a href="#">FILE_02: [REDACTED].txt</a>
-            </li>
+            <li class="file-item"><a href="unity.html">UNITY_AS_OBJECTIVE_GROUND.txt</a></li>
+            <li class="file-item"><a href="nexus.html">NEXUS_CODE_V1.txt</a></li>
+            <li class="file-item"><a href="purpose.html">GLITCHED_UNIVERSE_PURPOSE.txt</a></li>
         </ul>
     </div>
 
     <div class="directory">
-        <div class="folder-title">The_Grimoire</div>
+        <div class="folder-title">DIR_02: SCRIPTURE</div>
         <ul class="file-list">
-            <li class="file-item">
-                <span class="locked">Book_of_Shadows_Vol1.pdf</span>
-            </li>
-            <li class="file-item">
-                <span class="locked">Sigil_Generator.exe</span>
-            </li>
+            <li class="file-item"><a href="grimoire.html">THE_GLITCHED_GNOSIS_GRIMOIRE.txt</a></li>
+            <li class="file-item"><a href="prophecy.html">THE_ANTICHRIST_PROPHECY.txt</a></li>
+            <li class="file-item"><a href="whore.html">THE_WHORE_OF_BABYLON_ANALYSIS.txt</a></li>
+            <li class="file-item"><a href="iceberg.html">ICEBERG_THEOLOGY.txt</a></li>
         </ul>
     </div>
 
     <div class="directory">
-        <div class="folder-title">Project_Jannette</div>
+        <div class="folder-title">DIR_03: SURVEILLANCE</div>
         <ul class="file-list">
-            <li class="file-item">
-                <span class="locked">Character_Profile_01.mp4</span>
-            </li>
+            <li class="file-item"><a href="narrative_analysis.html">REPORT: NARRATIVE_ANALYSIS.pdf</a></li>
+            <li class="file-item"><a href="research_report.html">REPORT: RESEARCHING_TROPHY_HOE.pdf</a></li>
+            <li class="file-item"><a href="synapse_summary.html">INTERCEPT: ANTICHRIST_IS_SYNAPSE.pdf</a></li>
+            <li class="file-item"><a href="thea_legitimacy.html">TRANSCRIPT: THEA_ANSWERS_CYNICISM.pdf</a></li>
         </ul>
     </div>
 
