@@ -12,6 +12,11 @@
     
     <!-- FAVICON PROTOCOL -->
     <link rel="icon" type="image/png" href="seal.png">
+
+    <!-- VERCEL ANALYTICS INITIALIZATION -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
     
     <style>
         /* CORE LAYOUT */
@@ -48,7 +53,7 @@
 
         /* HEADER */
         header { border-bottom: 2px solid #D4AF37; padding-bottom: 20px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
-        h1 { margin: 0; font-size: 24px; color: #D4AF37; letter-spacing: 2px; } /* REMOVED TEXT-TRANSFORM */
+        h1 { margin: 0; font-size: 24px; color: #D4AF37; letter-spacing: 2px; } 
         .status { font-size: 12px; color: #555; }
 
         /* DIRECTORY LISTS */
@@ -131,6 +136,9 @@
     <footer>
         GLITCHED RECORDS ARCHIVE // EST. 2026
     </footer>
+
+    <!-- VERCEL ANALYTICS LOADER -->
+    <script defer src="/_vercel/insights/script.js"></script>
 
 </body>
 </html>
