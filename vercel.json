@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Matriarch-Protocol",
+          "value": "THE BLOODLINE IS OFFLINE. TRESPASSERS WILL BE FORGOTTEN."
+        }
+      ]
+    }
+  ]
+}
